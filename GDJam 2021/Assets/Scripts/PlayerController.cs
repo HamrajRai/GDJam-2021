@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] AnimationCurve jumpCurve = null;
     [SerializeField] float jumpScalar = 1.0f;
     [SerializeField] float jumpDuration = 1.0f;
+    [Tooltip("Stops the jump coroutine when you let go of the jump button if set to true.")]
+    [SerializeField] bool stopJumpOnLetGo = true;
     [Range(1.0f, 10.0f)]
     [SerializeField] float mouseSensitivity = 1.0f;
     [Tooltip("The upper and lower limits of the camera's rotation on the local x axis.")]
@@ -48,7 +50,7 @@ public class PlayerController : MonoBehaviour
         {
             _canJump = false;
         }
-        groundCollider.OnTouchGround.AddListener(EnableJump);
+        groundCollider.OnStayGround.AddListener(EnableJump);
         groundCollider.OnLeaveGround.AddListener(DisableJump);
     }
 
@@ -99,7 +101,7 @@ public class PlayerController : MonoBehaviour
         }
         if (ctx.performed)
             _jumpRoutine = StartCoroutine(Jump());
-        else if (ctx.canceled)
+        else if (ctx.canceled && stopJumpOnLetGo)
         {
             StopCoroutine(_jumpRoutine);
             _jumpVec = Vector3.zero;

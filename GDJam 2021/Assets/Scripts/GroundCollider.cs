@@ -7,12 +7,18 @@ public class GroundCollider : MonoBehaviour
 {
     //may unhide later
     [HideInInspector] public UnityEvent OnTouchGround;
+    [HideInInspector] public UnityEvent OnStayGround;
     [HideInInspector] public UnityEvent OnLeaveGround;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Terrain"))
             OnTouchGround.Invoke();
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.CompareTag("Terrain"))
+            OnStayGround.Invoke();
     }
     private void OnTriggerExit(Collider other)
     {
