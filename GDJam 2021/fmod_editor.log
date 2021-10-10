@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001332B15BDD8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001B6A53F2F48 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -23,14 +23,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 299936
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 20544
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000010DBD6EE88
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000063EE0FF518
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9E17C60E0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9E17C60B0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9E17C61B0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9E17C6270
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001333A3B0FD8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9E22A60E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9E22A60B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9E22A61B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9E22A6270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001B8B19DC418
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Whoosh Wood 10', format=5, channels=2, frequency=44100, lengthbytes=3680, lengthpcm=12607, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.079954.
@@ -39,14 +39,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 299936
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 20544
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000010DBD6EE88
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000063EE0FF518
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9E17C60E0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9E17C60B0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9E17C61B0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9E17C6270
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001333A3B0FD8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9E22A60E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9E22A60B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9E22A61B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9E22A6270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001B8B19DC418
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Whoosh Wood 12', format=5, channels=2, frequency=44100, lengthbytes=5760, lengthpcm=20311, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.098718.
@@ -55,14 +55,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 299936
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 20544
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000010DBD6EE88
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000063EE0FF518
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9E17C60E0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9E17C60B0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9E17C61B0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9E17C6270
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001333A3B0FD8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9E22A60E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9E22A60B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9E22A61B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9E22A6270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001B8B19DC418
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Whoosh Wood 11', format=5, channels=2, frequency=44100, lengthbytes=4096, lengthpcm=14358, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.030439.
@@ -71,30 +71,68 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 299936
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 20544
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000010DBD6EE88
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000063EE0FF518
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9E17C60E0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9E17C60B0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9E17C61B0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9E17C6270
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001333A3B0FD8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9E22A60E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9E22A60B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9E22A61B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9E22A6270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001B8B19DC418
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Whoosh Wood 1', format=5, channels=2, frequency=44100, lengthbytes=6848, lengthpcm=25104, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.176637.
+[LOG] SystemI::createSound                     : filename = FMOD Proj/Build/Desktop/Musik.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001B8EFD2DDE8 : node = 000001B8DC5AE020
+[LOG] SystemI::createSound                     : add node to async list : head = 000001B8DCE57B18.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001B8EFD2DDE8
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD Proj/Build/Desktop/Musik.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2054912
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 3552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001B8DC5AE130
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GDJ21-part1', format=5, channels=2, frequency=44100, lengthbytes=596864, lengthpcm=1801531, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.869934.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001B8EFD2DDE8
+[LOG] SoundI::release                          : GDJ21-intro (000001B8EFD2C9A8)
+[LOG] SoundI::release                          :     GDJ21-intro (000001B8DFCA52F8)
+[LOG] SoundI::release                          :     GDJ21-intro (000001B8EFD29048)
+[LOG] SystemI::createSound                     : filename = FMOD Proj/Build/Desktop/SFX.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001B8EFD2A128 : node = 000001B8DC5ADEE0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001B8DCE57B18.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001B8EFD2A128
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD Proj/Build/Desktop/SFX.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 299936
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20544
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001B8DC5ADFF0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo', format=5, channels=2, frequency=44100, lengthbytes=65376, lengthpcm=478389, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.634918.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001B8EFD2A128
+[LOG] SoundI::release                          : AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (000001B8EFD27548)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (000001B8DFCA5158)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (000001B8EFD26E88)
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 299936
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 20544
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000010DBD6EE88
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000063EE0FF518
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9E17C60E0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9E17C60B0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9E17C61B0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9E17C6270
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001333A3B34F8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9E22A60E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9E22A60B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9E22A61B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9E22A6270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001B8B19DD078
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='CK_Electricity_Sparks_Processed-04', format=5, channels=2, frequency=44100, lengthbytes=25088, lengthpcm=88200, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.586753.
@@ -103,14 +141,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 299936
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 20544
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000010DBD6EE88
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000063EE0FF518
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9E17C60E0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9E17C60B0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9E17C61B0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9E17C6270
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001333A3B34F8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9E22A60E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9E22A60B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9E22A61B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9E22A6270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001B8B19DD078
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='SHOCK_RIFLE_Deep_Short_Wobble_01_mono', format=5, channels=1, frequency=44100, lengthbytes=11040, lengthpcm=66430, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.960693.
@@ -119,14 +157,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 299936
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 20544
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000010DBD6EE88
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000063EE0FF518
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9E17C60E0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9E17C60B0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9E17C61B0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9E17C6270
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001333A3B34F8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9E22A60E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9E22A60B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9E22A61B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9E22A6270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001B8B19DD078
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='SHOCK_RIFLE_Clap_Bright_Thunder_Tail_01_mono', format=5, channels=1, frequency=44100, lengthbytes=10464, lengthpcm=57673, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.946472.
@@ -135,77 +173,58 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 299936
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 20544
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000010DBD6EE88
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000063EE0FF518
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9E17C60E0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9E17C60B0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9E17C61B0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9E17C6270
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001333A3B34F8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9E22A60E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9E22A60B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9E22A61B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9E22A6270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001B8B19DD078
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='SHOCK_RIFLE_Zap_Dropping_Tail_01_mono', format=5, channels=1, frequency=44100, lengthbytes=5856, lengthpcm=35232, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
-[LOG] SystemI::createSound                     : filename = FMOD Proj/Build/Desktop/Musik.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000001331F7AE938 : node = 00000132B08F89D0
-[LOG] SystemI::createSound                     : add node to async list : head = 00000132FD4746D8.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001331F7AE938
-[LOG] SystemI::createSoundInternal             :     Create name='FMOD Proj/Build/Desktop/Musik.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2054912
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 3552
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000132B08F8AE0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GDJ21-part2', format=5, channels=2, frequency=44100, lengthbytes=599904, lengthpcm=1801531, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.869934.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001331F7AE938
-[LOG] SoundI::release                          : GDJ21-intro (000001331F7A6748)
-[LOG] SoundI::release                          :     GDJ21-intro (0000013323486FC8)
-[LOG] SoundI::release                          :     GDJ21-intro (000001331F7A6E08)
 [LOG] SystemI::createSound                     : filename = FMOD Proj/Build/Desktop/SFX.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000001331F7B1D88 : node = 00000132B08F9290
-[LOG] SystemI::createSound                     : add node to async list : head = 00000132FD4746D8.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001331F7B1D88
+[LOG] SystemI::createSound                     : setdata soundi = 000001B8EFD24458 : node = 000001B8D79BC140
+[LOG] SystemI::createSound                     : add node to async list : head = 000001B8DCE57B18.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001B8EFD24458
 [LOG] SystemI::createSoundInternal             :     Create name='FMOD Proj/Build/Desktop/SFX.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 299936
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20544
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000132B08F93A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001B8D79BC250
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo', format=5, channels=2, frequency=44100, lengthbytes=65376, lengthpcm=478389, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.634918.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001331F7B1D88
-[LOG] SoundI::release                          : AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (000001331F7A7318)
-[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000013323487308)
-[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (000001331F7A8C68)
-[LOG] SoundI::release                          : GDJ21-part2 (000001331F7AE938)
-[LOG] SoundI::release                          :     GDJ21-part2 (0000013323487168)
-[LOG] SoundI::release                          :     GDJ21-part2 (000001331F7AEC98)
-[LOG] SoundI::release                          : AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (000001331F7B1D88)
-[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000013323486FC8)
-[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (000001331F7B3018)
-[LOG] SoundI::release                          :  (000001333AE4DFE8)
-[LOG] SoundI::release                          :     SHOCK_RIFLE_Deep_Short_Wobble_01_mono (000001332B295DC8)
-[LOG] SoundI::release                          :  (000001333AE4DB98)
-[LOG] SoundI::release                          :     SHOCK_RIFLE_Zap_Dropping_Tail_01_mono (000001332B295C28)
-[LOG] SoundI::release                          :  (000001333AE4D468)
-[LOG] SoundI::release                          :     CK_Electricity_Sparks_Processed-04 (000001332B2958E8)
-[LOG] SoundI::release                          :  (000001333AE4E158)
-[LOG] SoundI::release                          :     SHOCK_RIFLE_Clap_Bright_Thunder_Tail_01_mono (000001332B296928)
-[LOG] SoundI::release                          :  (000001333AE4DE78)
-[LOG] SoundI::release                          :     Whoosh Wood 1 (000001332B296E08)
-[LOG] SoundI::release                          :  (00000132F7B6D658)
-[LOG] SoundI::release                          :     Whoosh Wood 10 (000001332B296448)
-[LOG] SoundI::release                          :  (00000132F7B6C968)
-[LOG] SoundI::release                          :     Whoosh Wood 11 (000001332B295F68)
-[LOG] SoundI::release                          :  (00000132F7B6D4E8)
-[LOG] SoundI::release                          :     Whoosh Wood 12 (000001332B2955A8)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001B8EFD24458
+[LOG] SoundI::release                          : AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (000001B8EFD2A128)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (000001B8E33878E8)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (000001B8EFD21008)
+[LOG] SoundI::release                          : GDJ21-part1 (000001B8EFD2DDE8)
+[LOG] SoundI::release                          :     GDJ21-part1 (000001B8E3387DC8)
+[LOG] SoundI::release                          :     GDJ21-part1 (000001B8EFD2DA88)
+[LOG] SoundI::release                          : AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (000001B8EFD24458)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (000001B8D6B6A5A8)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (000001B8EFD220E8)
+[LOG] SoundI::release                          :  (000001B8E2FDD508)
+[LOG] SoundI::release                          :     SHOCK_RIFLE_Deep_Short_Wobble_01_mono (000001B8D6B6A268)
+[LOG] SoundI::release                          :  (000001B8E2FDA9E8)
+[LOG] SoundI::release                          :     SHOCK_RIFLE_Zap_Dropping_Tail_01_mono (000001B8D6B6A408)
+[LOG] SoundI::release                          :  (000001B8E2FDC988)
+[LOG] SoundI::release                          :     CK_Electricity_Sparks_Processed-04 (000001B8D6B6A748)
+[LOG] SoundI::release                          :  (000001B8E2FDA878)
+[LOG] SoundI::release                          :     SHOCK_RIFLE_Clap_Bright_Thunder_Tail_01_mono (000001B8D6B6A0C8)
+[LOG] SoundI::release                          :  (000001B8E2FDD398)
+[LOG] SoundI::release                          :     Whoosh Wood 1 (000001B8B1428E48)
+[LOG] SoundI::release                          :  (000001B8E2FD9B88)
+[LOG] SoundI::release                          :     Whoosh Wood 10 (000001B8B1428968)
+[LOG] SoundI::release                          :  (000001B8E2FDA2B8)
+[LOG] SoundI::release                          :     Whoosh Wood 11 (000001B8B1428CA8)
+[LOG] SoundI::release                          :  (000001B8E2FDB848)
+[LOG] SoundI::release                          :     Whoosh Wood 12 (000001B8B1428B08)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients

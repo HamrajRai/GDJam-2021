@@ -16,9 +16,12 @@ public class EnemyController : MonoBehaviour
 
     [SerializeField] float originHeight;
 
+    [SerializeField] float attackDist = 5.0f;
+
     [Header("References")]
     [SerializeField] Transform player;
     [SerializeField] GameObject PointHolder;
+    [SerializeField] WeaponManager weaponManager = null;
 
     //
     Transform[] points;
@@ -67,6 +70,9 @@ public class EnemyController : MonoBehaviour
                     spotted = true;
             }
         }
+
+        if ((player.position - transform.position).magnitude < attackDist)
+            weaponManager.AttackWithCurrentWeapon();
 
     }
 
