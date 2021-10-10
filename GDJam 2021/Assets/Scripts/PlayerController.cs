@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] new Transform cameraTransform = null;
     [SerializeField] new Rigidbody rigidbody = null;
     [SerializeField] GroundCollider groundCollider = null;
+    [SerializeField] WeaponManager weaponManager = null;
 
 
     Coroutine _jumpRoutine = null;
@@ -115,4 +116,9 @@ public class PlayerController : MonoBehaviour
         _lookVec = ctx.ReadValue<Vector2>();
     }
 
+    public void OnFire(CallbackContext ctx)
+    {
+        if (!ctx.performed) return;
+        weaponManager.AttackWithCurrentWeapon();
+    }
 }
