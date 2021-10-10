@@ -7,11 +7,15 @@ public class Fists : Weapon
     [System.Serializable]
     class ComboPart
     {
-        public GameObject fist;
+        public GameObject fist = null;
         [HideInInspector] public Vector3 orignalPos = Vector3.zero;
-        public Transform lerpPos;
-        public AnimationCurve punchCurve;
+        [HideInInspector] public Quaternion orignalRotation = Quaternion.identity;
+        public Transform lerpPos = null;
+        public AnimationCurve punchCurve = null;
+        [HideInInspector] public DamageDoer damageDoer = null;
         public float comboSpeed = 1.0f;
+        public float damage = 1.0f;
+        public float knockback = 5.0f;
     }
 
     [SerializeField] GameObject leftFist = null, rightFist = null;
@@ -38,7 +42,13 @@ public class Fists : Weapon
     private void OnEnable()
     {
         foreach (var f in combo)
+        {
             f.orignalPos = f.fist.transform.localPosition;
+            f.orignalRotation = f.fist.transform.localRotation;
+            f.damageDoer = f.fist.GetComponent<DamageDoer>();
+            f.damageDoer.canDoDamage = false;
+        }
+
     }
 
     public override void Attack()
@@ -48,6 +58,9 @@ public class Fists : Weapon
         base.Attack();
         IEnumerator Lerp()
         {
+            combo[_comboIndex].damageDoer.damage = combo[_comboIndex].damage;
+            combo[_comboIndex].damageDoer.knockBack = combo[_comboIndex].knockback;
+            combo[_comboIndex].damageDoer.canDoDamage = true;
             _attacking = true;
             float x = 0.0f;
             float speed = globalSpeed + combo[_comboIndex].comboSpeed;
@@ -56,8 +69,10 @@ public class Fists : Weapon
                 yield return new WaitForEndOfFrame();
                 x += Time.deltaTime * speed;
                 combo[_comboIndex].fist.transform.localPosition = Vector3.Lerp(combo[_comboIndex].orignalPos, combo[_comboIndex].lerpPos.localPosition, combo[_comboIndex].punchCurve.Evaluate(x));
+                combo[_comboIndex].fist.transform.localRotation = Quaternion.Slerp(combo[_comboIndex].orignalRotation, combo[_comboIndex].lerpPos.localRotation, combo[_comboIndex].punchCurve.Evaluate(x));
             }
             _attacking = false;
+            combo[_comboIndex].damageDoer.canDoDamage = false;
             _comboIndex++;
             if (_comboIndex == combo.Count)
             {

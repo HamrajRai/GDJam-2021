@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 42974247}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5600003, y: 0.09099996, z: 1.56}
+  m_LocalPosition: {x: -0.5600003, y: 0.09099996, z: 1.95}
   m_LocalScale: {x: 0.24059367, y: 0.25965196, z: 1.3127128}
   m_Children: []
   m_Father: {fileID: 690387656}
@@ -54,7 +54,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 402440090}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.56, y: 0.09099996, z: 1.56}
+  m_LocalPosition: {x: 0.56, y: 0.09099996, z: 1.95}
   m_LocalScale: {x: 0.24059367, y: 0.25965196, z: 1.3127128}
   m_Children: []
   m_Father: {fileID: 690387656}
@@ -89,6 +89,7 @@ Transform:
   m_Children:
   - {fileID: 402440091}
   - {fileID: 42974248}
+  - {fileID: 1420038752}
   m_Father: {fileID: 1022258418}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -305,7 +306,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 39133ddaf57e1374ea73b2cb66d245c2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -334,7 +335,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1364235634}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -352,10 +353,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
+  knockBack: 5
   OnDidDamage:
     m_PersistentCalls:
       m_Calls: []
   canDoDamage: 1
+--- !u!1 &1420038751
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1420038752}
+  m_Layer: 8
+  m_Name: Right2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1420038752
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420038751}
+  m_LocalRotation: {x: -0.5440502, y: -0.18639569, z: 0.12544173, w: 0.8084124}
+  m_LocalPosition: {x: 0.162, y: 1.022, z: 1.95}
+  m_LocalScale: {x: 0.24059367, y: 0.25965196, z: 1.3127128}
+  m_Children: []
+  m_Father: {fileID: 690387656}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -56.395004, y: -52.291004, z: 47.13}
 --- !u!1 &1470953509
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,7 +448,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 39133ddaf57e1374ea73b2cb66d245c2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -445,7 +477,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1470953509}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -463,6 +495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
+  knockBack: 5
   OnDidDamage:
     m_PersistentCalls:
       m_Calls: []
@@ -476,6 +509,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1764042442}
+  - component: {fileID: 646510869}
   m_Layer: 0
   m_Name: FireballGun
   m_TagString: Untagged
@@ -498,6 +532,22 @@ Transform:
   m_Father: {fileID: 1996800528}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &646510869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764042441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0e6158099ce6c54bb9fd54de60958a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammo: -1
+  OnAttack:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1996800527
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,7 +637,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weapons:
   - {fileID: 983618788}
-  downtime: 0.25
+  downtime: 0.5
   OnChangeWeapon:
     m_PersistentCalls:
       m_Calls: []
@@ -852,7 +902,7 @@ GameObject:
   - component: {fileID: 6563760329013075829}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -966,6 +1016,9 @@ MonoBehaviour:
   movementFalloffPercent: 0.59
   movementFalloffThreshold: 1
   movementSpeed: 10
+  hasMomentum: 1
+  momentumBuildupSpeed: 1
+  maxMomentum: 0.25
   jumpCurve:
     serializedVersion: 2
     m_Curve:
@@ -991,9 +1044,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   jumpScalar: 8
-  jumpDuration: 0.1
+  jumpDuration: 0.2
   stopJumpOnLetGo: 0
-  mouseSensitivity: 10
+  mouseSensitivity: 20
   upDownLimit: 90
   cameraTransform: {fileID: 6563760329691792918}
   rigidbody: {fileID: 6563760329013075827}
@@ -1232,24 +1285,25 @@ MonoBehaviour:
   combo:
   - fist: {fileID: 1364235634}
     orignalPos: {x: 0, y: 0, z: 0}
+    orignalRotation: {x: 0, y: 0, z: 0, w: 1}
     lerpPos: {fileID: 402440091}
     punchCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.0024375916
-        value: -0.0031471252
-        inSlope: 2.0377991
-        outSlope: 2.0377991
+        time: 0.030059814
+        value: 0.7211189
+        inSlope: 0.43182606
+        outSlope: 0.43182606
         tangentMode: 34
         weightedMode: 0
         inWeight: 0
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.4947075
-        value: 1
-        inSlope: 0.040449798
-        outSlope: 0.040449798
+        time: 0.5667442
+        value: 0.95287323
+        inSlope: -0.8690349
+        outSlope: -0.8690349
         tangentMode: 34
         weightedMode: 0
         inWeight: 0.33333334
@@ -1257,8 +1311,8 @@ MonoBehaviour:
       - serializedVersion: 3
         time: 1.0073242
         value: -0.0031394958
-        inSlope: -1.9568995
-        outSlope: -1.9568995
+        inSlope: -2.169896
+        outSlope: -2.169896
         tangentMode: 34
         weightedMode: 0
         inWeight: 0.33333334
@@ -1266,27 +1320,31 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 0
-    comboSpeed: 1
+    damageDoer: {fileID: 0}
+    comboSpeed: 3
+    damage: 1
+    knockback: 5
   - fist: {fileID: 1470953509}
     orignalPos: {x: 0, y: 0, z: 0}
+    orignalRotation: {x: 0, y: 0, z: 0, w: 1}
     lerpPos: {fileID: 42974248}
     punchCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.0024375916
-        value: -0.0031471252
-        inSlope: 2.0377991
-        outSlope: 2.0377991
+        time: 0.0074043274
+        value: 0.8363457
+        inSlope: 0.183711
+        outSlope: 0.183711
         tangentMode: 34
         weightedMode: 0
         inWeight: 0
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.4947075
-        value: 1
-        inSlope: 0.040449798
-        outSlope: 0.040449798
+        time: 0.5542625
+        value: 0.93680954
+        inSlope: -0.9454745
+        outSlope: -0.9454745
         tangentMode: 34
         weightedMode: 0
         inWeight: 0.33333334
@@ -1294,8 +1352,8 @@ MonoBehaviour:
       - serializedVersion: 3
         time: 1.0073242
         value: -0.0031394958
-        inSlope: -1.9568995
-        outSlope: -1.9568995
+        inSlope: -2.07466
+        outSlope: -2.07466
         tangentMode: 34
         weightedMode: 0
         inWeight: 0.33333334
@@ -1303,10 +1361,54 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 0
-    comboSpeed: 2
-  globalSpeed: 1
-  comboCooldown: 0.25
-  weaponManager: {fileID: 0}
+    damageDoer: {fileID: 0}
+    comboSpeed: 4
+    damage: 2
+    knockback: 5
+  - fist: {fileID: 1364235634}
+    orignalPos: {x: 0, y: 0, z: 0}
+    orignalRotation: {x: 0, y: 0, z: 0, w: 0}
+    lerpPos: {fileID: 1420038752}
+    punchCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: -0.027133942
+        value: 0.5496712
+        inSlope: 0.71903247
+        outSlope: 0.71903247
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.54655683
+        value: 0.96217346
+        inSlope: -0.6879895
+        outSlope: -0.6879895
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1.0073242
+        value: -0.0031394958
+        inSlope: -2.0950115
+        outSlope: -2.0950115
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    damageDoer: {fileID: 0}
+    comboSpeed: 1
+    damage: 3
+    knockback: 10
+  globalSpeed: 2
+  comboCooldown: 0.125
+  weaponManager: {fileID: 4772025891871815514}
 --- !u!1 &8948629386363009991
 GameObject:
   m_ObjectHideFlags: 0
