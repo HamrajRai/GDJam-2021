@@ -20,6 +20,12 @@ public class WeaponManager : MonoBehaviour
     private void Start()
     {
         _currentWeapon = weapons[0];
+        foreach (var w in weapons)
+        {
+            if (_currentWeapon == w)
+                continue;
+            w.gameObject.SetActive(false);
+        }
     }
 
     private void Update()
@@ -36,13 +42,23 @@ public class WeaponManager : MonoBehaviour
         _internalDowntime = 0.0f;
         OnBeginAttack.Invoke();
         _currentWeapon.Attack();
+        // if (_currentWeapon.GetAmmo() == 0)
+        //     ChangeWeapon(0);
     }
 
     public void ChangeWeapon(int index)
     {
-        _weaponIndex = index;
-        _currentWeapon = weapons[_weaponIndex];
-        OnChangeWeapon.Invoke();
+        IEnumerator Wait()
+        {
+            while (_currentWeapon.attacking)
+                yield return new WaitForEndOfFrame();
+            _weaponIndex = index;
+            _currentWeapon.gameObject.SetActive(false);
+            _currentWeapon = weapons[_weaponIndex];
+            _currentWeapon.gameObject.SetActive(true);
+            OnChangeWeapon.Invoke();
+        }
+        StartCoroutine(Wait());
     }
 
     private void OnTriggerStay(Collider other)

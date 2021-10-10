@@ -4988,7 +4988,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   lerpPoint: {fileID: 1967907788715485401}
   lerpSpeed: 1
-  type: 0
+  type: 1
 --- !u!1 &6385137164356533963
 GameObject:
   m_ObjectHideFlags: 0
