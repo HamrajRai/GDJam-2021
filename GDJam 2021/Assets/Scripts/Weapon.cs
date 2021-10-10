@@ -8,6 +8,7 @@ public class Weapon : MonoBehaviour
     [Tooltip("-1 for infinite")]
     [SerializeField] protected int ammo = -1;
 
+    [HideInInspector] public bool attacking = false;
 
     public UnityEvent OnAttack;
 
@@ -22,7 +23,5 @@ public class Weapon : MonoBehaviour
             ammo--;
         OnAttack.Invoke();
     }
-
-
 
 }

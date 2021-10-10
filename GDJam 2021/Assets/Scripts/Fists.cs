@@ -28,7 +28,6 @@ public class Fists : Weapon
 
     int _comboIndex = 0;
     bool _onCooldown = false;
-    bool _attacking = false;
 
     private void Start()
     {
@@ -48,12 +47,14 @@ public class Fists : Weapon
             f.damageDoer = f.fist.GetComponent<DamageDoer>();
             f.damageDoer.canDoDamage = false;
         }
+        _onCooldown = false;
+        attacking = false;
 
     }
 
     public override void Attack()
     {
-        if (_onCooldown || _attacking)
+        if (_onCooldown || attacking)
             return;
         base.Attack();
         IEnumerator Lerp()
@@ -61,7 +62,7 @@ public class Fists : Weapon
             combo[_comboIndex].damageDoer.damage = combo[_comboIndex].damage;
             combo[_comboIndex].damageDoer.knockBack = combo[_comboIndex].knockback;
             combo[_comboIndex].damageDoer.canDoDamage = true;
-            _attacking = true;
+            attacking = true;
             float x = 0.0f;
             float speed = globalSpeed + combo[_comboIndex].comboSpeed;
             while (x < 1.0f)
@@ -71,7 +72,7 @@ public class Fists : Weapon
                 combo[_comboIndex].fist.transform.localPosition = Vector3.Lerp(combo[_comboIndex].orignalPos, combo[_comboIndex].lerpPos.localPosition, combo[_comboIndex].punchCurve.Evaluate(x));
                 combo[_comboIndex].fist.transform.localRotation = Quaternion.Slerp(combo[_comboIndex].orignalRotation, combo[_comboIndex].lerpPos.localRotation, combo[_comboIndex].punchCurve.Evaluate(x));
             }
-            _attacking = false;
+            attacking = false;
             combo[_comboIndex].damageDoer.canDoDamage = false;
             _comboIndex++;
             if (_comboIndex == combo.Count)
