@@ -11,6 +11,11 @@ public class Health : MonoBehaviour
 
     public UnityEvent OnTakeDamage, OnDie;
     private bool deathDone = false;
+
+    public float GetHealth()
+    {
+        return health;
+    }
     public void TakeDamage(float damage)
     {
         IEnumerator func()

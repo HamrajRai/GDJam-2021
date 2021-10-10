@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float upDownLimit = 90.0f;
 
     [Header("References")]
-    [SerializeField] new Transform cameraTransform = null;
+    [SerializeField] Transform cameraTransform = null;
     [SerializeField] new Rigidbody rigidbody = null;
     [SerializeField] GroundCollider groundCollider = null;
     [SerializeField] WeaponManager weaponManager = null;
