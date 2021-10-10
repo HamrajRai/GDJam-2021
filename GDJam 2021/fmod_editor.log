@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 00000185978FE6B8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000259076CC718 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,57 +18,3 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] SystemI::createSound                     : filename = FMOD Proj/Build/Desktop/Musik.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 00000184D0032278 : node = 0000018586E8A620
-[LOG] SystemI::createSound                     : add node to async list : head = 000001858704F6D8.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000184D0032278
-[LOG] SystemI::createSoundInternal             :     Create name='FMOD Proj/Build/Desktop/Musik.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2054912
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 3552
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000018586E8A730
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GDJ21-part3', format=5, channels=2, frequency=44100, lengthbytes=567872, lengthpcm=1801531, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.869934.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000184D0032278
-[LOG] SoundI::release                          : GDJ21-intro (00000184D0032788)
-[LOG] SoundI::release                          :     GDJ21-intro (00000185864E4E08)
-[LOG] SoundI::release                          :     GDJ21-intro (0000018597B34F18)
-[LOG] SystemI::createSound                     : filename = FMOD Proj/Build/Desktop/SFX.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 00000184D0032788 : node = 0000018586E89C20
-[LOG] SystemI::createSound                     : add node to async list : head = 000001858704F6D8.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000184D0032788
-[LOG] SystemI::createSoundInternal             :     Create name='FMOD Proj/Build/Desktop/SFX.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 299936
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20544
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000018586E89D30
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo', format=5, channels=2, frequency=44100, lengthbytes=65376, lengthpcm=478389, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.634918.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000184D0032788
-[LOG] SoundI::release                          : AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (00000184D0031F18)
-[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (00000185864E3DC8)
-[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000018597B34D68)
-[LOG] SoundI::release                          : GDJ21-part3 (00000184D0032278)
-[LOG] SoundI::release                          :     GDJ21-part3 (0000018539974798)
-[LOG] SoundI::release                          :     GDJ21-part3 (0000018586F30178)
-[LOG] SoundI::release                          : AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (00000184D0032788)
-[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000018539976198)
-[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000018586F30EF8)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] SystemI::close                           : Closed.
