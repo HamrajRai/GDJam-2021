@@ -10,12 +10,16 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float movementFalloffPercent = 0.1f;
     [SerializeField] float movementFalloffThreshold = 1.0f;
     [SerializeField] float movementSpeed = 1.0f;
+    [SerializeField] bool hasMomentum = false;
+    [SerializeField] float momentumBuildupSpeed = 0.25f;
+    [Tooltip("Momentum lerps between movementFalloffPercent and this value, then uses the resulting value to add momentum to the player.")]
+    [SerializeField] float maxMomentum = 0.1f;
     [SerializeField] AnimationCurve jumpCurve = null;
     [SerializeField] float jumpScalar = 1.0f;
     [SerializeField] float jumpDuration = 1.0f;
     [Tooltip("Stops the jump coroutine when you let go of the jump button if set to true.")]
     [SerializeField] bool stopJumpOnLetGo = true;
-    [Range(1.0f, 10.0f)]
+    [Range(1.0f, 20.0f)]
     [SerializeField] float mouseSensitivity = 1.0f;
     [Tooltip("The upper and lower limits of the camera's rotation on the local x axis.")]
     [SerializeField] float upDownLimit = 90.0f;
@@ -31,6 +35,8 @@ public class PlayerController : MonoBehaviour
 
     Vector2 _moveVec = new Vector2();
     [HideInInspector] public bool doMovementFalloff = true;
+    float _momentumTValue = 0.0f;
+    new Camera camera = null;
     Vector3 _jumpVec = new Vector3();
     bool _canJump = false;
 
@@ -53,6 +59,8 @@ public class PlayerController : MonoBehaviour
         }
         groundCollider.OnStayGround.AddListener(EnableJump);
         groundCollider.OnLeaveGround.AddListener(DisableJump);
+
+        camera = cameraTransform.gameObject.GetComponent<Camera>();
     }
 
     private void Update()
@@ -61,6 +69,18 @@ public class PlayerController : MonoBehaviour
         _verticalAngle = Mathf.Clamp(_verticalAngle, -upDownLimit, upDownLimit);
         cameraTransform.localRotation = Quaternion.Euler(_verticalAngle, 0.0f, 0.0f);
         transform.localRotation = Quaternion.AngleAxis(_lookVec.x * Time.deltaTime * mouseSensitivity, Vector3.up) * transform.localRotation;
+
+        if (_moveVec.magnitude == 0.0f)
+        {
+            _momentumTValue -= Time.deltaTime * momentumBuildupSpeed * 2.0f;
+            if (_momentumTValue <= 0.0f)
+                _momentumTValue = 0.0f;
+            return;
+        }
+        _momentumTValue += Time.deltaTime * momentumBuildupSpeed;
+        if (_momentumTValue >= 1.0f)
+            _momentumTValue = 1.0f;
+
     }
 
     private void FixedUpdate()
@@ -74,9 +94,15 @@ public class PlayerController : MonoBehaviour
         //ignore y component
         var vel = rigidbody.velocity;
         vel.y = 0.0f;
+        float falloff = movementFalloffPercent;
+        if (hasMomentum)
+        {
+            falloff = Mathf.Lerp(movementFalloffPercent, maxMomentum, _momentumTValue);
+            camera.fieldOfView = Mathf.Lerp(60.0f, 90.0f, _momentumTValue);
+        }
 
         if (vel.magnitude > movementFalloffThreshold)
-            rigidbody.AddForce(-vel * movementFalloffPercent, ForceMode.Impulse);
+            rigidbody.AddForce(-vel * falloff, ForceMode.Impulse);
     }
 
     public void OnMove(CallbackContext ctx)

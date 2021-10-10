@@ -12,11 +12,14 @@ public class Health : MonoBehaviour
     public UnityEvent OnTakeDamage, OnDie;
     private bool deathDone = false;
 
+    [Header("Reference")]
+    [SerializeField] new Rigidbody rigidbody = null;
+
     public float GetHealth()
     {
         return health;
     }
-    public void TakeDamage(float damage)
+    public void TakeDamage(float damage, Vector3 knockback)
     {
         IEnumerator func()
         {
@@ -24,6 +27,7 @@ public class Health : MonoBehaviour
             void Dead() => deathDone = true;
 
             health -= damage;
+            rigidbody.AddForce(knockback,ForceMode.Impulse);
             OnTakeDamage.Invoke();
             if (health <= 0)
             {

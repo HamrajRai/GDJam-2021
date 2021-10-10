@@ -8,13 +8,14 @@ public class Fists : Weapon
     class ComboPart
     {
         public GameObject fist = null;
-        public Vector3 orignalPos = Vector3.zero;
-        public Quaternion orignalRotation = Quaternion.identity;
+        [HideInInspector] public Vector3 orignalPos = Vector3.zero;
+        [HideInInspector] public Quaternion orignalRotation = Quaternion.identity;
         public Transform lerpPos = null;
         public AnimationCurve punchCurve = null;
-        public DamageDoer damageDoer = null;
+        [HideInInspector] public DamageDoer damageDoer = null;
         public float comboSpeed = 1.0f;
         public float damage = 1.0f;
+        public float knockback = 5.0f;
     }
 
     [SerializeField] GameObject leftFist = null, rightFist = null;
@@ -58,6 +59,7 @@ public class Fists : Weapon
         IEnumerator Lerp()
         {
             combo[_comboIndex].damageDoer.damage = combo[_comboIndex].damage;
+            combo[_comboIndex].damageDoer.knockBack = combo[_comboIndex].knockback;
             combo[_comboIndex].damageDoer.canDoDamage = true;
             _attacking = true;
             float x = 0.0f;

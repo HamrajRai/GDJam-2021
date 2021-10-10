@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 42974247}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5600003, y: 0.09099996, z: 1.56}
+  m_LocalPosition: {x: -0.5600003, y: 0.09099996, z: 1.95}
   m_LocalScale: {x: 0.24059367, y: 0.25965196, z: 1.3127128}
   m_Children: []
   m_Father: {fileID: 690387656}
@@ -54,7 +54,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 402440090}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.56, y: 0.09099996, z: 1.56}
+  m_LocalPosition: {x: 0.56, y: 0.09099996, z: 1.95}
   m_LocalScale: {x: 0.24059367, y: 0.25965196, z: 1.3127128}
   m_Children: []
   m_Father: {fileID: 690387656}
@@ -353,6 +353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
+  knockBack: 5
   OnDidDamage:
     m_PersistentCalls:
       m_Calls: []
@@ -381,7 +382,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1420038751}
   m_LocalRotation: {x: -0.5440502, y: -0.18639569, z: 0.12544173, w: 0.8084124}
-  m_LocalPosition: {x: 0.162, y: 1.022, z: 1.493}
+  m_LocalPosition: {x: 0.162, y: 1.022, z: 1.95}
   m_LocalScale: {x: 0.24059367, y: 0.25965196, z: 1.3127128}
   m_Children: []
   m_Father: {fileID: 690387656}
@@ -494,6 +495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
+  knockBack: 5
   OnDidDamage:
     m_PersistentCalls:
       m_Calls: []
@@ -1014,6 +1016,9 @@ MonoBehaviour:
   movementFalloffPercent: 0.59
   movementFalloffThreshold: 1
   movementSpeed: 10
+  hasMomentum: 1
+  momentumBuildupSpeed: 1
+  maxMomentum: 0.25
   jumpCurve:
     serializedVersion: 2
     m_Curve:
@@ -1041,7 +1046,7 @@ MonoBehaviour:
   jumpScalar: 8
   jumpDuration: 0.2
   stopJumpOnLetGo: 0
-  mouseSensitivity: 10
+  mouseSensitivity: 20
   upDownLimit: 90
   cameraTransform: {fileID: 6563760329691792918}
   rigidbody: {fileID: 6563760329013075827}
@@ -1324,6 +1329,7 @@ MonoBehaviour:
     damageDoer: {fileID: 0}
     comboSpeed: 3
     damage: 1
+    knockback: 5
   - fist: {fileID: 1470953509}
     orignalPos: {x: 0, y: 0, z: 0}
     orignalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -1364,6 +1370,7 @@ MonoBehaviour:
     damageDoer: {fileID: 0}
     comboSpeed: 4
     damage: 2
+    knockback: 5
   - fist: {fileID: 1364235634}
     orignalPos: {x: 0, y: 0, z: 0}
     orignalRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -1404,6 +1411,7 @@ MonoBehaviour:
     damageDoer: {fileID: 0}
     comboSpeed: 1
     damage: 3
+    knockback: 10
   globalSpeed: 2
   comboCooldown: 0.125
   weaponManager: {fileID: 4772025891871815514}
