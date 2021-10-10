@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{2060bf54-7d11-41c4-a05a-149007afb0f0}">
+		<property name="assetPath">
+			<value>SFX/Doomfist/FIREARM_Shotgun_Model_01b_Fire_Single_RR2_stereo.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.3421995464852607</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{92c59ace-90c9-4a49-ba48-294cdafc1f70}</destination>
+		</relationship>
+	</object>
+</objects>
