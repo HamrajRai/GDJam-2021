@@ -1,0 +1,879 @@
+[LOG] System::create                           : Header version = 2.01.11. Current version = 2.01.11.
+[LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0000000000000000.
+[LOG] SystemI::init                            : Initialize version=20111 (118066), maxchannels=256, flags=0x00020000
+[LOG] SystemI::setOutputInternal               : Setting output to 'FMOD WASAPI Output'
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=8, nSamplesPerSec=48000, nAvgBytesPerSec=1536000, nBlockAlign=32, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x0000063F, SubFormat=00000003-0000-0010-8000-00AA00389B71.
+[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] DownMix::init                            : dspbuffersize: 1024  rate: 48000. output speaker mode: 7, input speaker mode 3
+[LOG] DownMix::init                            : done.
+[LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
+[LOG] AsyncManager::init                       : manager 0000028DF48590C8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : done
+[LOG] PlaybackSystem::init                     : 
+[LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
+[LOG] PlaybackSystem::init                     : done
+[LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
+[LOG] Manager::init                            : done.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSound                     : filename = FMOD Proj/Build/Desktop/Musik.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000028DE34607B8 : node = 0000028DF2EC35F0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000028DF462C8A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028DE34607B8
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD Proj/Build/Desktop/Musik.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2054912
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 3552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000028DF2EC3700
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GDJ21-part1', format=5, channels=2, frequency=44100, lengthbytes=596864, lengthpcm=1801531, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.869934.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028DE34607B8
+[LOG] SoundI::release                          : GDJ21-intro (0000028DE345DF38)
+[LOG] SoundI::release                          :     GDJ21-intro (0000028DA9C76F18)
+[LOG] SoundI::release                          :     GDJ21-intro (0000028DE3459858)
+[LOG] SystemI::createSound                     : filename = FMOD Proj/Build/Desktop/SFX.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000028DE345D1B8 : node = 0000028DE778D270
+[LOG] SystemI::createSound                     : add node to async list : head = 0000028DF462C8A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028DE345D1B8
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD Proj/Build/Desktop/SFX.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 299936
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20544
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000028DE778D380
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo', format=5, channels=2, frequency=44100, lengthbytes=65376, lengthpcm=478389, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.634918.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028DE345D1B8
+[LOG] SoundI::release                          : AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE345E448)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DA9C773F8)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE345C438)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_26.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_26.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_27.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_27.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_28.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_28.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_29.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_29.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_30.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_30.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_31.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_31.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_32.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_32.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_33.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_33.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_34.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_34.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = FMOD Proj/Build/Desktop/SFX.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000028DE345B358 : node = 0000028DE778D3B0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000028DF462C8A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028DE345B358
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD Proj/Build/Desktop/SFX.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 299936
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20544
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000028DE778D4C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo', format=5, channels=2, frequency=44100, lengthbytes=65376, lengthpcm=478389, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.634918.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028DE345B358
+[LOG] SoundI::release                          : AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE345D1B8)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE6EB45B8)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE345DF38)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_35.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_35.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_36.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_36.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_37.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_37.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_38.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_38.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_39.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_39.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_40.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_40.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_41.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_41.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_42.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_42.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_43.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_43.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_44.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_44.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_45.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_45.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_46.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_46.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_47.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_47.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_48.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_48.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_49.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_49.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_50.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_50.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_51.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_51.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_52.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_52.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_53.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_53.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = FMOD Proj/Build/Desktop/SFX.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000028DE345D6C8 : node = 0000028DE778D4F0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000028DF462C8A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028DE345D6C8
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD Proj/Build/Desktop/SFX.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 299936
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20544
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000028DE778D600
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo', format=5, channels=2, frequency=44100, lengthbytes=65376, lengthpcm=478389, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.634918.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028DE345D6C8
+[LOG] SoundI::release                          : AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE345B358)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE6EB5938)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE345E958)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_54.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_54.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_55.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_55.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_56.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_56.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_57.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_57.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_58.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_58.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_59.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_59.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_60.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_60.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_61.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_61.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_62.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_62.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_63.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_63.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_64.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_64.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_65.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_65.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_66.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_66.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_67.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_67.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_68.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_68.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_69.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_69.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_70.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_70.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_71.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_71.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_72.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_72.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_73.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_73.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_74.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_74.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_75.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_75.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = FMOD Proj/Build/Desktop/SFX.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000028DE345DF38 : node = 0000028DE778D630
+[LOG] SystemI::createSound                     : add node to async list : head = 0000028DF462C8A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028DE345DF38
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD Proj/Build/Desktop/SFX.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 299936
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20544
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000028DE778D740
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo', format=5, channels=2, frequency=44100, lengthbytes=65376, lengthpcm=478389, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.634918.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028DE345DF38
+[LOG] SoundI::release                          : AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE345D6C8)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE6EB45B8)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE345E448)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_76.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_76.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_77.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_77.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = FMOD Proj/Build/Desktop/Musik.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000028DE3458FE8 : node = 0000028DE778D770
+[LOG] SystemI::createSound                     : add node to async list : head = 0000028DF462C8A8.  list count = 0
+[LOG] SystemI::createSound                     : filename = FMOD Proj/Build/Desktop/Musik.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028DE3458FE8
+[LOG] SystemI::createSound                     : setdata soundi = 0000028DE345D1B8 : node = 0000028DE778D8B0
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD Proj/Build/Desktop/Musik.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000028DF462C8A8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2054912
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 3552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000028DE778D880
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GDJ21-part3', format=5, channels=2, frequency=44100, lengthbytes=567872, lengthpcm=1801531, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.869934.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028DE3458FE8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028DE345D1B8
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD Proj/Build/Desktop/Musik.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2054912
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 3552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000028DE778D9C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 10212
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GDJ21-intro', format=5, channels=2, frequency=44100, lengthbytes=137408, lengthpcm=456540, pcmblocksize=0, loopstart=0, loopend=450382, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.869934.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028DE345D1B8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028DE345E298
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028DE345E298
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028DE345E298
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028DE345E298
+[LOG] SoundI::release                          : GDJ21-part1 (0000028DE34607B8)
+[LOG] SoundI::release                          :     GDJ21-part1 (0000028DE6EB4418)
+[LOG] SoundI::release                          :     GDJ21-part1 (0000028DE3461538)
+[LOG] SystemI::createSound                     : filename = FMOD Proj/Build/Desktop/SFX.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000028DE3461898 : node = 0000028DE778CEB0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000028DF462C8A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028DE3461898
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD Proj/Build/Desktop/SFX.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 299936
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20544
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000028DE778CFC0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo', format=5, channels=2, frequency=44100, lengthbytes=65376, lengthpcm=478389, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.634918.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028DE3461898
+[LOG] SoundI::release                          : AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE345DF38)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE6EB5938)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE345CE58)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_78.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_78.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = FMOD Proj/Build/Desktop/SFX.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000028DE345A788 : node = 0000028DE778CFF0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000028DF462C8A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028DE345A788
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD Proj/Build/Desktop/SFX.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 299936
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20544
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000028DE778D100
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo', format=5, channels=2, frequency=44100, lengthbytes=65376, lengthpcm=478389, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.634918.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028DE345A788
+[LOG] SoundI::release                          : AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE3461898)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DA9C76F18)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE3461538)
+[LOG] SystemI::createSound                     : filename = FMOD Proj/Build/Desktop/SFX.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000028DE3461538 : node = 0000028DE778D9F0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000028DF462C8A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028DE3461538
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD Proj/Build/Desktop/SFX.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 299936
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20544
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000028DE778DB00
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo', format=5, channels=2, frequency=44100, lengthbytes=65376, lengthpcm=478389, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.634918.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028DE3461538
+[LOG] SoundI::release                          : AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE345A788)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DA9C773F8)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE345A428)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_79.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_79.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_80.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_80.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = FMOD Proj/Build/Desktop/SFX.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000028DE345AAE8 : node = 0000028DE778DB30
+[LOG] SystemI::createSound                     : add node to async list : head = 0000028DF462C8A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028DE345AAE8
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD Proj/Build/Desktop/SFX.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 299936
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20544
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000028DE778DC40
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo', format=5, channels=2, frequency=44100, lengthbytes=65376, lengthpcm=478389, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.634918.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028DE345AAE8
+[LOG] SoundI::release                          : AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE3461538)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DA9C76F18)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE34616E8)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_81.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_81.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = FMOD Proj/Build/Desktop/Musik.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000028DE34607B8 : node = 0000028DAEBBEA80
+[LOG] SystemI::createSound                     : add node to async list : head = 0000028DF462C8A8.  list count = 0
+[LOG] SystemI::createSound                     : filename = FMOD Proj/Build/Desktop/Musik.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028DE34607B8
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD Proj/Build/Desktop/Musik.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     setdata soundi = 0000028DE3461898 : node = 0000028DAEBBE440
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2054912
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000028DF462C8A8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 3552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000028DAEBBEB90
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GDJ21-part2', format=5, channels=2, frequency=44100, lengthbytes=599904, lengthpcm=1801531, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.869934.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028DE34607B8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028DE3461898
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD Proj/Build/Desktop/Musik.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2054912
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 3552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000028DAEBBE550
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 10212
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GDJ21-intro', format=5, channels=2, frequency=44100, lengthbytes=137408, lengthpcm=456540, pcmblocksize=0, loopstart=0, loopend=450382, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.869934.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028DE3461898
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028DE3452C58
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028DE3452C58
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028DE3452C58
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028DE3452C58
+[LOG] SoundI::release                          : GDJ21-part3 (0000028DE3458FE8)
+[LOG] SoundI::release                          :     GDJ21-part3 (0000028DE6EB45B8)
+[LOG] SoundI::release                          :     GDJ21-part3 (0000028DE3459858)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_82.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_82.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = FMOD Proj/Build/Desktop/SFX.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000028DE3459858 : node = 0000028DAEBBEBC0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000028DF462C8A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028DE3459858
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD Proj/Build/Desktop/SFX.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 299936
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20544
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000028DAEBBECD0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo', format=5, channels=2, frequency=44100, lengthbytes=65376, lengthpcm=478389, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.634918.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028DE3459858
+[LOG] SoundI::release                          : AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE345AAE8)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DA9C773F8)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE345C798)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_83.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_83.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_84.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_84.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_85.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_85.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_86.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_86.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_87.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_87.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_88.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_88.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_89.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_89.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_90.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_90.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_91.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_91.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_92.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_92.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_93.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_93.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_94.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_94.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = FMOD Proj/Build/Desktop/SFX.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000028DE3459A08 : node = 0000028DAEBBED00
+[LOG] SystemI::createSound                     : add node to async list : head = 0000028DF462C8A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028DE3459A08
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD Proj/Build/Desktop/SFX.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 299936
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20544
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000028DAEBBEE10
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo', format=5, channels=2, frequency=44100, lengthbytes=65376, lengthpcm=478389, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.634918.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028DE3459A08
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_95.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_95.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SoundI::release                          : AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE3459858)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE6EB45B8)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE345BA18)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_96.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_96.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_97.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_97.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_98.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_98.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_99.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_99.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_100.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_100.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_101.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_101.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_102.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_102.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_103.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_103.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_104.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_104.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_105.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_105.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_106.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_106.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_107.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_107.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_108.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_108.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_109.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_109.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_110.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_110.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_111.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_111.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_112.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_112.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_113.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_113.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_114.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_114.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_115.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_115.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_116.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_116.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_117.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_117.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_118.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_118.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_119.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_119.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_120.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_120.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_121.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_121.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_122.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_122.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = FMOD Proj/Build/Desktop/SFX.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000028DE3458E38 : node = 0000028DAEBBEBC0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000028DF462C8A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028DE3458E38
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD Proj/Build/Desktop/SFX.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 299936
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20544
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000028DAEBBECD0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo', format=5, channels=2, frequency=44100, lengthbytes=65376, lengthpcm=478389, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.634918.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028DE3458E38
+[LOG] SoundI::release                          : AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE3459A08)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE6EB5938)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE3459F18)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_123.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_123.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_124.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_124.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_125.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_125.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_126.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_126.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_127.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_127.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_128.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_128.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_129.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_129.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_130.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_130.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_131.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_131.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_132.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_132.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = FMOD Proj/Build/Desktop/SFX.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000028DE3458FE8 : node = 0000028DAEBBE800
+[LOG] SystemI::createSound                     : add node to async list : head = 0000028DF462C8A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028DE3458FE8
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD Proj/Build/Desktop/SFX.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 299936
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20544
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000028DAEBBE910
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo', format=5, channels=2, frequency=44100, lengthbytes=65376, lengthpcm=478389, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.634918.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028DE3458FE8
+[LOG] SoundI::release                          : AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE3458E38)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE6EB45B8)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE345E7A8)
+[LOG] SystemI::createSound                     : filename = FMOD Proj/Build/Desktop/Musik.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000028DE3458E38 : node = 0000028DAEBBED00
+[LOG] SystemI::createSound                     : add node to async list : head = 0000028DF462C8A8.  list count = 0
+[LOG] SystemI::createSound                     : filename = FMOD Proj/Build/Desktop/Musik.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028DE3458E38
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD Proj/Build/Desktop/Musik.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     setdata soundi = 0000028DE345BF28 : node = 0000028DAEBBE080
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000028DF462C8A8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2054912
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 3552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000028DAEBBEE10
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GDJ21-part1', format=5, channels=2, frequency=44100, lengthbytes=596864, lengthpcm=1801531, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.869934.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028DE3458E38
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028DE345BF28
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD Proj/Build/Desktop/Musik.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2054912
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 3552
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000028DAEBBE190
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 10212
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GDJ21-intro', format=5, channels=2, frequency=44100, lengthbytes=137408, lengthpcm=456540, pcmblocksize=0, loopstart=0, loopend=450382, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.869934.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028DE345BF28
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028DE345B358
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028DE345B358
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028DE345B358
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028DE345B358
+[LOG] SoundI::release                          : GDJ21-part2 (0000028DE34607B8)
+[LOG] SoundI::release                          :     GDJ21-part2 (0000028DA9C76F18)
+[LOG] SoundI::release                          :     GDJ21-part2 (0000028DE3455838)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_133.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_133.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = FMOD Proj/Build/Desktop/SFX.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000028DE34607B8 : node = 0000028DAEBBE580
+[LOG] SystemI::createSound                     : add node to async list : head = 0000028DF462C8A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028DE34607B8
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD Proj/Build/Desktop/SFX.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 299936
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20544
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000028DAEBBE690
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo', format=5, channels=2, frequency=44100, lengthbytes=65376, lengthpcm=478389, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.634918.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028DE34607B8
+[LOG] SoundI::release                          : AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE3458FE8)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE6EB5938)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE345A788)
+[LOG] SystemI::createSound                     : filename = FMOD Proj/Build/Desktop/SFX.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000028DE345C438 : node = 0000028DAEBBE800
+[LOG] SystemI::createSound                     : add node to async list : head = 0000028DF462C8A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028DE345C438
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD Proj/Build/Desktop/SFX.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 299936
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20544
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000028DAEBBE910
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo', format=5, channels=2, frequency=44100, lengthbytes=65376, lengthpcm=478389, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.634918.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028DE345C438
+[LOG] SoundI::release                          : AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE34607B8)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DA9BC9F98)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE3456258)
+[LOG] SystemI::createSound                     : filename = FMOD Proj/Build/Desktop/SFX.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000028DE3453828 : node = 0000028DAEBBEA80
+[LOG] SystemI::createSound                     : add node to async list : head = 0000028DF462C8A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028DE3453828
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD Proj/Build/Desktop/SFX.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 299936
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20544
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000028DAEBBEB90
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo', format=5, channels=2, frequency=44100, lengthbytes=65376, lengthpcm=478389, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.634918.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028DE3453828
+[LOG] SoundI::release                          : AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE345C438)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DA9C76F18)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE345E448)
+[LOG] ProfileClient::recvThreadLoopFunction    : Socket disconnected
+[LOG] ProfileClient::markForDead               : Closing client connection
+[LOG] Thread::callback                         : FMOD profiler thread (recv) finished.
+[LOG] Thread::callback                         : FMOD profiler thread (send) finished.
+[LOG] LiveUpdate::clientDisconnected           : client = 0000028DE71DB838
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::initThread                       : Init FMOD profiler thread (recv). Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 131072, Semaphore: No, Sleep Time: 0, Looping: No.
+[LOG] Thread::initThread                       : Init FMOD profiler thread (send). Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 131072, Semaphore: No, Sleep Time: 0, Looping: No.
+[LOG] LiveUpdate::clientConnected              : client = 0000028DE2EE8D28
+[LOG] LiveUpdate::readPacket                   : Recieved init packet from client 0000028DE2EE8D28
+[LOG] LiveUpdate::readPacket                   : Accepting init message for client 0000028DE2EE8D28
+[LOG] LiveUpdate::transitionToConnected        : 
+[LOG] LiveUpdate::acceptInitPacket             : Client 0000028DE2EE8D28 connected, entering connected state
+[LOG] ProfileClient::recvThreadLoopFunction    : Socket disconnected
+[LOG] ProfileClient::markForDead               : Closing client connection
+[LOG] Thread::callback                         : FMOD profiler thread (recv) finished.
+[LOG] Thread::callback                         : FMOD profiler thread (send) finished.
+[LOG] LiveUpdate::clientDisconnected           : client = 0000028DE2EE8D28
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::initThread                       : Init FMOD profiler thread (recv). Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 131072, Semaphore: No, Sleep Time: 0, Looping: No.
+[LOG] Thread::initThread                       : Init FMOD profiler thread (send). Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 131072, Semaphore: No, Sleep Time: 0, Looping: No.
+[LOG] LiveUpdate::clientConnected              : client = 0000028DE2EEAE88
+[LOG] LiveUpdate::readPacket                   : Recieved init packet from client 0000028DE2EEAE88
+[LOG] LiveUpdate::readPacket                   : Accepting init message for client 0000028DE2EEAE88
+[LOG] LiveUpdate::transitionToConnected        : 
+[LOG] Manager::sendConnectTimeHash             : 
+[LOG] LiveUpdate::sendBankHash                 : 
+[LOG] LiveUpdate::acceptInitPacket             : Client 0000028DE2EEAE88 connected, entering connected state
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_134.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/skate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jprZvg/hotswap_134.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/My Computer/Documents/FMOD Studio/GDJam2021/Assets/SFX/AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/My Computer/Documents/FMOD Studio/GDJam2021/Assets/SFX/AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=2, frequency=44100, lengthbytes=1913556, lengthpcm=478389, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/My Computer/Documents/FMOD Studio/GDJam2021/Assets/Musik/GDJ21-part1.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/My Computer/Documents/FMOD Studio/GDJam2021/Assets/Musik/GDJ21-part1.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=2, frequency=48000, lengthbytes=7843404, lengthpcm=1960851, pcmblocksize=0, loopstart=0, loopend=1960850, mode=0x00000002, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/My Computer/Documents/FMOD Studio/GDJam2021/Assets/Musik/GDJ21-part2.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/My Computer/Documents/FMOD Studio/GDJam2021/Assets/Musik/GDJ21-part2.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=2, frequency=48000, lengthbytes=7843404, lengthpcm=1960851, pcmblocksize=0, loopstart=0, loopend=1960850, mode=0x00000002, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/My Computer/Documents/FMOD Studio/GDJam2021/Assets/Musik/GDJ21-part3.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/My Computer/Documents/FMOD Studio/GDJam2021/Assets/Musik/GDJ21-part3.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=2, frequency=48000, lengthbytes=7843404, lengthpcm=1960851, pcmblocksize=0, loopstart=0, loopend=1960850, mode=0x00000002, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/My Computer/Documents/FMOD Studio/GDJam2021/Assets/Musik/GDJ21-outro.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/My Computer/Documents/FMOD Studio/GDJam2021/Assets/Musik/GDJ21-outro.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=2, frequency=48000, lengthbytes=1960852, lengthpcm=490213, pcmblocksize=0, loopstart=0, loopend=490212, mode=0x00000002, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/My Computer/Documents/FMOD Studio/GDJam2021/Assets/Musik/GDJ21-intro.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/My Computer/Documents/FMOD Studio/GDJam2021/Assets/Musik/GDJ21-intro.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=2, frequency=48000, lengthbytes=1987660, lengthpcm=496915, pcmblocksize=0, loopstart=0, loopend=490212, mode=0x00000002, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[WRN] SoundSourceInstrumentInstance::startChannelIfReady : Loading delay exceeded, sound may play at incorrect time
+[LOG] SoundI::release                          : GDJ21-intro (0000028DE345D1B8)
+[LOG] SoundI::release                          :     GDJ21-intro (0000028DA9C79E38)
+[LOG] SoundI::release                          :     GDJ21-intro (0000028DE345E298)
+[WRN] SoundSourceInstrumentInstance::startChannelIfReady : Loading delay exceeded, sound may play at incorrect time
+[LOG] SoundI::release                          : GDJ21-intro (0000028DE3461898)
+[LOG] SoundI::release                          :     GDJ21-intro (0000028DE6EB4418)
+[LOG] SoundI::release                          :     GDJ21-intro (0000028DE3452C58)
+[WRN] SoundSourceInstrumentInstance::startChannelIfReady : Loading delay exceeded, sound may play at incorrect time
+[WRN] SoundSourceInstrumentInstance::startChannelIfReady : Loading delay exceeded, sound may play at incorrect time
+[LOG] SoundI::release                          : GDJ21-intro (0000028DE345BF28)
+[LOG] SoundI::release                          :     GDJ21-intro (0000028DA9BC9C58)
+[LOG] SoundI::release                          :     GDJ21-intro (0000028DE345B358)
+[WRN] SoundSourceInstrumentInstance::startChannelIfReady : Loading delay exceeded, sound may play at incorrect time
+[LOG] SoundI::release                          : AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE3453828)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DA9C773F8)
+[LOG] SoundI::release                          :     AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo (0000028DE3454FC8)
+[LOG] SoundI::release                          : GDJ21-part1 (0000028DE3458E38)
+[LOG] SoundI::release                          :     GDJ21-part1 (0000028DE6EB45B8)
+[LOG] SoundI::release                          :     GDJ21-part1 (0000028DE345DF38)
+[LOG] ProfileClient::recvThreadLoopFunction    : Socket disconnected
+[LOG] ProfileClient::markForDead               : Closing client connection
+[LOG] Thread::callback                         : FMOD profiler thread (recv) finished.
+[LOG] Thread::callback                         : FMOD profiler thread (send) finished.
+[LOG] LiveUpdate::clientDisconnected           : client = 0000028DE2EEAE88
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SoundI::release                          : AMBIENCE_SciFi_Large_Space_Hangar_Deep_Smooth_loop_stereo.wav (0000028DA9C76F18)
+[LOG] SoundI::release                          : GDJ21-part1.wav (0000028DE6EB5938)
+[LOG] SoundI::release                          : GDJ21-part2.wav (0000028DE6EB4758)
+[LOG] SoundI::release                          : GDJ21-part3.wav (0000028D8CEBAEF8)
+[LOG] SoundI::release                          : GDJ21-outro.wav (0000028D8CEBC5B8)
+[LOG] SoundI::release                          : GDJ21-intro.wav (0000028DAB47B6E8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
