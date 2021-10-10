@@ -30,7 +30,6 @@ public class Health : MonoBehaviour
     {
         IEnumerator func()
         {
-
             void Dead() => deathDone = true;
 
             health -= damage;
