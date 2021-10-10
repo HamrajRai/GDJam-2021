@@ -9,8 +9,12 @@ using UnityEngine.AI;
 public class EnemyController : MonoBehaviour
 {
     [Tooltip("view cone in degrees which the enemy can find the player")]
-    [SerializeField] float searchFOV = 10;
-    [SerializeField] float searchDist = 5;
+    [SerializeField] float searchFOV = 60;
+
+    [Tooltip("Max view distance enemy can see")]
+    [SerializeField] float searchDist = 10;
+
+    [SerializeField] float originHeight;
 
     [Header("References")]
     [SerializeField] Transform player;
@@ -31,13 +35,16 @@ public class EnemyController : MonoBehaviour
         enemyAgent.updateRotation = true;
         enemyAgent.updateUpAxis = true;
         enemyAgent.autoBraking = true;
+
+        foreach (var point in points)
+            print(point.position);
     }
 
     bool spotted = false;
     private void Update()
     {
 
-        if (Vector3.Distance(transform.position, enemyAgent.destination) <= .1f)
+        if (Vector3.Distance(transform.position, enemyAgent.destination) <= originHeight + 0.1f)
             enemyAgent.SetDestination(points[rand.Next(1, points.Length - 1)].position);
 
 
@@ -57,9 +64,7 @@ public class EnemyController : MonoBehaviour
                 print(cast[0].transform.name);
 
                 if (cast[0].transform.name == player.name)
-                {
                     spotted = true;
-                }
             }
         }
 
