@@ -21,7 +21,8 @@ public class EnemySpawner : MonoBehaviour
         _internalInterval -= Time.deltaTime;
         if (_internalInterval <= 0.0f)
         {
-            GameObject.Instantiate(enemyPrefab);
+            var g = GameObject.Instantiate(enemyPrefab);
+            g.transform.position = transform.position;
             _internalInterval = spawnInterval;
         }
     }

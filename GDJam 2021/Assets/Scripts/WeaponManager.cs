@@ -17,7 +17,7 @@ public class WeaponManager : MonoBehaviour
 
     float _internalDowntime = 0.0f;
 
-    private void Start()
+    private void OnEnable()
     {
         _currentWeapon = weapons[0];
         foreach (var w in weapons)
