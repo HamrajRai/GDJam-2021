@@ -1,4 +1,5 @@
-﻿//using System;
+﻿using System;
+using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -35,28 +36,32 @@ public class EnemyController : MonoBehaviour
     bool spotted = false;
     private void Update()
     {
-        //  print("next: " + nextPosition);
-        //  print("current: " + transform.position);
 
         if (Vector3.Distance(transform.position, enemyAgent.destination) <= .1f)
-        {
             enemyAgent.SetDestination(points[rand.Next(1, points.Length - 1)].position);
 
-            //   playerAgent.nextPosition = (nextPosition = points[rand.Next(1, points.Length - 1)].position);
-            print("move fat saa");
-        }
 
         var playerDir = (player.position - transform.position).normalized;
         float angle = Mathf.Rad2Deg * Mathf.Acos(Vector3.Dot(transform.forward, playerDir));
 
-        print(searchFOV + " : " + angle);
-        if (Physics.Raycast(transform.position, playerDir, searchDist) || spotted)
-            if (searchFOV > angle)
+
+        if (spotted)
+            enemyAgent.SetDestination(player.position);
+        else if (searchFOV * .5f > angle)
+        {
+            var cast = Physics.RaycastAll(transform.position + transform.up, playerDir, searchDist);
+
+            if (cast.Length > 0)
             {
-                enemyAgent.SetDestination(player.position);
-                spotted = true;
+                cast.OrderBy(hit => hit.distance);
+                print(cast[0].transform.name);
+
+                if (cast[0].transform.name == player.name)
+                {
+                    spotted = true;
+                }
             }
-        // playerAgent.velocity = playerAgent.velocity.normalized * speed;
+        }
 
     }
 
