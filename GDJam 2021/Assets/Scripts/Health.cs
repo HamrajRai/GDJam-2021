@@ -7,13 +7,20 @@ using UnityEngine.Events;
 public class Health : MonoBehaviour
 {
 
-    [SerializeField] float health;
+    [SerializeField] protected float health;
+    [SerializeField] bool disableOnDeath = true;
 
     public UnityEvent OnTakeDamage, OnDie;
     private bool deathDone = false;
 
+    protected float _maxHP = 0.0f;
+
     [Header("Reference")]
     [SerializeField] new Rigidbody rigidbody = null;
+
+    private void Start() {
+        _maxHP = health;
+    }
 
     public float GetHealth()
     {
@@ -27,7 +34,7 @@ public class Health : MonoBehaviour
             void Dead() => deathDone = true;
 
             health -= damage;
-            rigidbody.AddForce(knockback,ForceMode.Impulse);
+            rigidbody.AddForce(knockback, ForceMode.Impulse);
             OnTakeDamage.Invoke();
             if (health <= 0)
             {
@@ -43,7 +50,8 @@ public class Health : MonoBehaviour
                 });
 
                 OnDie.RemoveListener(Dead);
-                gameObject.SetActive(false);
+                if (disableOnDeath)
+                    gameObject.SetActive(false);
             }
         }
         StartCoroutine(func());

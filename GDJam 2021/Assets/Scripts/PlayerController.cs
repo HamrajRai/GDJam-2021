@@ -47,8 +47,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        
         void EnableJump()
         {
             _canJump = true;
@@ -145,6 +144,9 @@ public class PlayerController : MonoBehaviour
     public void OnFire(CallbackContext ctx)
     {
         if (!ctx.performed) return;
+        //this is here because webGL sucks basically
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         weaponManager.AttackWithCurrentWeapon();
     }
 }
