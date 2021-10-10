@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{4aa65f83-9b77-411f-8ae5-1b2b31cf7b50}">
+		<property name="assetPath">
+			<value>SFX/Shotgun/Camera Stand 2-24 Rendered (253427418fd71ef1).wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.1632916666666666</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{92c59ace-90c9-4a49-ba48-294cdafc1f70}</destination>
+		</relationship>
+	</object>
+</objects>
