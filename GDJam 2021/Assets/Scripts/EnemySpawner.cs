@@ -9,6 +9,9 @@ public class EnemySpawner : MonoBehaviour
 
     [Header("References")]
     [SerializeField] GameObject enemyPrefab = null;
+    [SerializeField] Transform player = null;
+    [SerializeField] GameObject patrolpoints = null;
+
 
     float _internalInterval = 0.0f;
     private void Start()
@@ -21,8 +24,13 @@ public class EnemySpawner : MonoBehaviour
         _internalInterval -= Time.deltaTime;
         if (_internalInterval <= 0.0f)
         {
+
             var g = GameObject.Instantiate(enemyPrefab);
             g.transform.position = transform.position;
+
+            g.GetComponent<EnemyController>().setPlayer(player);
+            g.GetComponent<EnemyController>().setPoints(patrolpoints);
+
             _internalInterval = spawnInterval;
         }
     }

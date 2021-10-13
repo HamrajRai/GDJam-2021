@@ -12,7 +12,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] float searchFOV = 60;
 
     [Tooltip("Max view distance enemy can see")]
-    [SerializeField] float searchDist = 10;
+    [SerializeField] float searchDist = 20;
 
     [SerializeField] float originHeight;
 
@@ -24,7 +24,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] WeaponManager weaponManager = null;
 
     //
-    Transform[] points;
+    Transform[] points = null;
 
     // [SerializeField] float speed;
     System.Random rand = new System.Random();
@@ -32,23 +32,36 @@ public class EnemyController : MonoBehaviour
 
     private void Start()
     {
-        points = PointHolder.transform.GetComponentsInChildren<Transform>();
+        if (PointHolder)
+            setPoints(PointHolder);
+
         enemyAgent = GetComponent<NavMeshAgent>();
         enemyAgent.nextPosition = transform.position;
         enemyAgent.updateRotation = true;
         enemyAgent.updateUpAxis = true;
         enemyAgent.autoBraking = true;
 
-        foreach (var point in points)
-            print(point.position);
+        transform.GetChild(0).GetComponent<Health>().OnDie.AddListener(() => { GetComponent<NavMeshAgent>().isStopped = true; });
+
+
+    }
+
+    public void setPlayer(Transform pos)
+    {
+        player = pos;
+    }
+    public void setPoints(GameObject obj)
+    {
+        points = obj.transform.GetComponentsInChildren<Transform>();
     }
 
     bool spotted = false;
     private void Update()
     {
 
-        if (Vector3.Distance(transform.position, enemyAgent.destination) <= originHeight + 0.1f)
-            enemyAgent.SetDestination(points[rand.Next(1, points.Length - 1)].position);
+        if (points != null)
+            if (Vector3.Distance(transform.position, enemyAgent.destination) <= originHeight + 0.1f)
+                enemyAgent.SetDestination(points[rand.Next(1, points.Length - 1)].position);
 
 
         var playerDir = (player.position - transform.position).normalized;
@@ -64,7 +77,7 @@ public class EnemyController : MonoBehaviour
             if (cast.Length > 0)
             {
                 cast.OrderBy(hit => hit.distance);
-                print(cast[0].transform.name);
+                //    print(cast[0].transform.name);
 
                 if (cast[0].transform.name == player.name)
                     spotted = true;
@@ -73,6 +86,8 @@ public class EnemyController : MonoBehaviour
 
         if ((player.position - transform.position).magnitude < attackDist)
             weaponManager.AttackWithCurrentWeapon();
+
+
 
     }
 
