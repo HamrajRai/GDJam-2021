@@ -24,6 +24,7 @@ public class Fists : Weapon
     [SerializeField] float comboCooldown = 0.25f;
     [Header("References")]
     [SerializeField] WeaponManager weaponManager = null;
+    [SerializeField] new Rigidbody rigidbody = null;
 
 
     int _comboIndex = 0;

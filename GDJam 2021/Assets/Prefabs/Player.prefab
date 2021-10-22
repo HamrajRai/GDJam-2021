@@ -7368,7 +7368,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6563760329013075826}
-  m_Material: {fileID: 13400000, guid: 0f3d26ca8fbf6644093d4754d7753c4e, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
@@ -7405,37 +7405,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementFalloffPercent: 0.59
   movementFalloffThreshold: 1
-  movementSpeed: 10
+  movementSpeed: 15
   hasMomentum: 1
   momentumBuildupSpeed: 1
   maxMomentum: 0.25
-  jumpCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0.028133392
-      value: 1.0428619
-      inSlope: -1.0380323
-      outSlope: -1.0380323
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1.0162048
-      value: 0.017211914
-      inSlope: -1.0380323
-      outSlope: -1.0380323
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  jumpScalar: 8
-  jumpDuration: 0.2
-  stopJumpOnLetGo: 0
+  jumpScalar: 50
   mouseSensitivity: 20
   upDownLimit: 90
   cameraTransform: {fileID: 6563760329691792918}
@@ -7554,7 +7528,18 @@ MonoBehaviour:
       m_Calls: []
   OnDie:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: SaveScore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   rigidbody: {fileID: 6563760329013075827}
 --- !u!1 &6563760329691792915
 GameObject:

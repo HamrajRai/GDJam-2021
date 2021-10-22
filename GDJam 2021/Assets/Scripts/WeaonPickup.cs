@@ -43,7 +43,10 @@ public class WeaonPickup : MonoBehaviour
     {
         if (!other.CompareTag("Player"))
             return;
-        other.gameObject.GetComponentInChildren<WeaponManager>().ChangeWeapon(((int)type));
-        Destroy(gameObject.transform.parent.gameObject);
+        var weaponManager = other.gameObject.GetComponentInChildren<WeaponManager>();
+        if (weaponManager == null)
+            return;
+        weaponManager.ChangeWeapon(((int)type));
+        gameObject.transform.parent.gameObject.SetActive(false);
     }
 }

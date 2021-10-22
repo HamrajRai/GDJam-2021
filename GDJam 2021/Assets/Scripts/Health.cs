@@ -8,7 +8,6 @@ public class Health : MonoBehaviour
 {
 
     [SerializeField] protected float health;
-    [SerializeField] bool disableOnDeath = true;
 
     public UnityEvent OnTakeDamage, OnDie;
     private bool deathDone = false;
@@ -18,42 +17,26 @@ public class Health : MonoBehaviour
     [Header("Reference")]
     [SerializeField] new Rigidbody rigidbody = null;
 
-    private void Start() {
+    private void Start()
+    {
         _maxHP = health;
+        OnDie.AddListener(Die);
     }
 
     public float GetHealth()
     {
         return health;
     }
-    public void TakeDamage(float damage, Vector3 knockback)
+    public virtual void Die()
     {
-        IEnumerator func()
-        {
-            void Dead() => deathDone = true;
-
-            health -= damage;
-            rigidbody.AddForce(knockback, ForceMode.Impulse);
-            OnTakeDamage.Invoke();
-            if (health <= 0)
-            {
-                OnDie.Invoke();
-
-                yield return new WaitUntil(
-                    () =>
-                {
-                    //this should be the last thing called in the listeners
-                    OnDie.AddListener(Dead);
-                    OnDie.Invoke();
-                    return deathDone;//I finished my kill spree
-                });
-
-                OnDie.RemoveListener(Dead);
-                if (disableOnDeath)
-                    gameObject.SetActive(false);
-            }
-        }
-        StartCoroutine(func());
+    }
+    public virtual void TakeDamage(float damage, Vector3 knockback)
+    {
+        OnTakeDamage.Invoke();
+        rigidbody.AddForce(knockback, ForceMode.Impulse);
+        health -= damage;
+        if (health <= 0.0f)
+            OnDie.Invoke();
     }
 
 }

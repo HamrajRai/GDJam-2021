@@ -6,12 +6,11 @@ public class ScoreDisplay : MonoBehaviour
 {
     [SerializeField] TMPro.TextMeshProUGUI currentScore = null;
     [SerializeField] TMPro.TextMeshProUGUI highScore = null;
-    [SerializeField] ScoreManager scoreManager = null;
 
     private void Update()
     {
-        currentScore.text = "Score: " + scoreManager.score.ToString();
-        highScore.text = "Highscore: " + scoreManager.highscore.ToString();
+        currentScore.text = "Score: " + ScoreManager.score.ToString();
+        highScore.text = "Highscore: " + ScoreManager.highscore.ToString();
     }
 
 }

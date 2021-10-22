@@ -13,7 +13,7 @@ public class DamageDoer : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!canDoDamage)
+        if (!canDoDamage || other.CompareTag(gameObject.tag))
             return;
         var hp = other.gameObject.GetComponent<Health>();
         if (hp == null)

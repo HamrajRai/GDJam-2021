@@ -5,90 +5,36 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-[RequireComponent(typeof(NavMeshAgent))]
 public class EnemyController : MonoBehaviour
 {
-    [Tooltip("view cone in degrees which the enemy can find the player")]
-    [SerializeField] float searchFOV = 60;
 
-    [Tooltip("Max view distance enemy can see")]
-    [SerializeField] float searchDist = 20;
-
-    [SerializeField] float originHeight;
-
-    [SerializeField] float attackDist = 5.0f;
+    [SerializeField] float stoppingDistance = 1.0f;
+    [SerializeField] float attackingDistance = 5.0f;
 
     [Header("References")]
-    [SerializeField] Transform player;
-    [SerializeField] GameObject PointHolder;
+    [SerializeField] NavMeshAgent agent = null;
     [SerializeField] WeaponManager weaponManager = null;
-
-    //
-    Transform[] points = null;
-
-    // [SerializeField] float speed;
-    System.Random rand = new System.Random();
-    NavMeshAgent enemyAgent;
+    GameObject p = null;
+    public static int numActiveEnemies = 0;
 
     private void Start()
     {
-        if (PointHolder)
-            setPoints(PointHolder);
-
-        enemyAgent = GetComponent<NavMeshAgent>();
-        enemyAgent.nextPosition = transform.position;
-        enemyAgent.updateRotation = true;
-        enemyAgent.updateUpAxis = true;
-        enemyAgent.autoBraking = true;
-
-        transform.GetChild(0).GetComponent<Health>().OnDie.AddListener(() => { GetComponent<NavMeshAgent>().isStopped = true; });
-
-
+        p = FindObjectOfType<PlayerController>().gameObject;
+        numActiveEnemies++;
     }
-
-    public void setPlayer(Transform pos)
-    {
-        player = pos;
+    private void OnDisable() {
+        numActiveEnemies--;
     }
-    public void setPoints(GameObject obj)
-    {
-        points = obj.transform.GetComponentsInChildren<Transform>();
-    }
-
-    bool spotted = false;
     private void Update()
     {
-
-        if (points != null)
-            if (Vector3.Distance(transform.position, enemyAgent.destination) <= originHeight + 0.1f)
-                enemyAgent.SetDestination(points[rand.Next(1, points.Length - 1)].position);
-
-
-        var playerDir = (player.position - transform.position).normalized;
-        float angle = Mathf.Rad2Deg * Mathf.Acos(Vector3.Dot(transform.forward, playerDir));
-
-
-        if (spotted)
-            enemyAgent.SetDestination(player.position);
-        else if (searchFOV * .5f > angle)
-        {
-            var cast = Physics.RaycastAll(transform.position + transform.up, playerDir, searchDist);
-
-            if (cast.Length > 0)
-            {
-                cast.OrderBy(hit => hit.distance);
-                //    print(cast[0].transform.name);
-
-                if (cast[0].transform.name == player.name)
-                    spotted = true;
-            }
+        var dist = (p.transform.position - transform.position).magnitude;
+        if (dist >= stoppingDistance){
+            agent.isStopped = false;
+            agent.SetDestination(p.transform.position);
         }
-
-        if ((player.position - transform.position).magnitude < attackDist)
+        else
+            agent.isStopped = true;
+        if (dist <= attackingDistance)
             weaponManager.AttackWithCurrentWeapon();
-
-
-
     }
-
 }
